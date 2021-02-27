@@ -1,10 +1,24 @@
-# Weather-Journal App Project
 
-## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
+# Project:  Udacity Weather-Journal App Project   
+*Author's name: Alejandra Olea* 
 
-## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+## Project description:
+This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI in a Weather Journal application..
 
-## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+## Learning Objectives: 
+Setup a Node environment with Express and the necessary project dependencies.
+Setup a server with GET and POST routes.
+create developer credentials for a Web API.
+Use the Fetch API with credentials and user input to get dynamic data into my app routes.
+Access a GET route on the server side, from a function called on the client side.
+Chain Promises together.
+Access HTML elements with JavaScript and set their properties dynamically.
+
+## Instructions:
+
+The starter code has all the elements and CSS you will need to complete the project,
+
+## Technologies used:
+
+The project utilizes HTML, CSS and JavaScript to work on User and Server sides.
+
