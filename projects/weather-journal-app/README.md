@@ -6,13 +6,14 @@
 This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI in a Weather Journal application..
 
 ## Learning Objectives: 
-### Setup a Node environment with Express and the necessary project dependencies.
-### Setup a server with GET and POST routes.
-### create developer credentials for a Web API.
-### Use the Fetch API with credentials and user input to get dynamic data into an app route.
-### Access a GET route on the server side, from a function called on the client side.
-### Chain Promises together.
-### Access HTML elements with JavaScript and set their properties dynamically.
+
+Setup a Node environment with Express and the necessary project dependencies. <br/>
+Setup a server with GET and POST routes.<br/>
+create developer credentials for a Web API.
+Use the Fetch API with credentials and user input to get dynamic data into an app route.<br/>
+Access a GET route on the server side, from a function called on the client side.<br/>
+Chain Promises together.<br/>
+Access HTML elements with JavaScript and set their properties dynamically.<br/>
 
 ## Instructions:
 
