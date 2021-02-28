@@ -24,8 +24,11 @@ async function generateEntry(e) {
     })
 }
 
+if (status === 200) {
+    updateUI("/all")
+}
 
-//FUNCTION  GET and POST to rethrieve data on the cliente side
+// ADD GET and POST to rethrieve data on the cliente side
 
 const getWeatherData = async(URL) => {
     const response = await fecth(URL);
@@ -39,7 +42,7 @@ const postData = async(url = "", data = {}) => {
         method: "POST",
         credentials: "same-origin",
         headers: {
-            "Content-Type": "application/json",
+            "Content- Type": "application/json",
             Accept: "application/json",
         },
         body: JSON.stringify(data),
