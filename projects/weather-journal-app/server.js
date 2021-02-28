@@ -41,5 +41,5 @@ app.post("/add", function(req, res) {
     };
 
     res.sendStatus(200)
-        //console.log("succesfully addede entry")
+        /*console.log("succesfully add entry");*/
 });

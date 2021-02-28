@@ -7,10 +7,10 @@ const baseURL = "http://api.openweathermap.org/data/2.5/weather";
 let d = new Date();
 let newDate = (d.getMonth() + 1) + '.' + d.getDate() + '.' + d.getFullYear();
 
-//Event listener
+//Event listener for click on "Generate"
 document.getElementById("generate").addEventListener("click", generateEntry);
-
-async function generateEntry() {
+//function generated on click
+async function generateEntry(e) {
     let zipCode = document.getElementById("zip").value;
     let userFeelings = document.getElementById("feelings").value;
     let URL = `${baseURL}?zip=${zipCode}&appid=${appID}&units=imperial`;
@@ -24,6 +24,7 @@ async function generateEntry() {
     })
 }
 
+
 //FUNCTION  GET and POST to rethrieve data on the cliente side
 
 const getWeatherData = async(URL) => {
@@ -32,12 +33,13 @@ const getWeatherData = async(URL) => {
 }
 
 // FUNCTION POST DATA
+
 const postData = async(url = "", data = {}) => {
     const response = await fecth(url, {
         method: "POST",
         credentials: "same-origin",
         headers: {
-            "Content -Type": "application/json",
+            "Content-Type": "application/json",
             Accept: "application/json",
         },
         body: JSON.stringify(data),
