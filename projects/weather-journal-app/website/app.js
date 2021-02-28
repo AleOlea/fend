@@ -7,7 +7,7 @@ const baseURL = "http://api.openweathermap.org/data/2.5/weather";
 let d = new Date();
 let newDate = (d.getMonth() + 1) + '.' + d.getDate() + '.' + d.getFullYear();
 
-//MY ADD  //Create event listener
+//Event listener
 document.getElementById("generate").addEventListener("click", generateEntry);
 
 async function generateEntry() {
@@ -22,4 +22,26 @@ async function generateEntry() {
         document.getElementById("content").innerText = `User Feeling is: ${userFeelings}`;
 
     })
+}
+
+//FUNCTION  GET and POST to rethrieve data on the cliente side
+
+const getWeatherData = async(URL) => {
+    const response = await fecth(URL);
+    return await response.json();
+}
+
+// FUNCTION POST DATA
+const postData = async(url = "", data = {}) => {
+    const response = await fecth(url, {
+        method: "POST",
+        credentials: "same-origin",
+        headers: {
+            "Content -Type": "application/json",
+            Accept: "application/json",
+        },
+        body: JSON.stringify(data),
+    });
+    return await response.json();
+
 }

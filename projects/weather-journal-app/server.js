@@ -25,6 +25,7 @@ const port = 8000;
 app.listen(port);
 console.log("hello world");
 
+
 // GET route
 app.get("/all", function(req, res) {
     res.send(projectData);
@@ -37,6 +38,8 @@ app.post("/add", function(req, res) {
         temperature: req.body.temperature,
         date: req.body.date,
         UserResponse: req.body.userResponse,
-    }
+    };
+
     res.sendStatus(200)
-})
+        //console.log("succesfully addede entry")
+});
